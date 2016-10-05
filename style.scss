@@ -1,0 +1,75 @@
+$background-color: #d3e1e8;
+$heading-color: #a7b5d3;
+$photo-size: 500px;
+$paragraph-width: 40em;
+$breakpoints: 55em;
+
+body {
+  background: $background-color;
+}
+
+.bio {
+  font-family: Avantgarde, sans-serif;
+  &-head {
+  	text-align: center;
+    background: $heading-color;
+  }
+  &-photo {
+    width: $photo-size;
+    max-width: 100%;
+    height: $photo-size;
+    background-image: url("https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-9/10003249_674303089308187_282076607_n.jpg?oh=6d2bf6e2856d6ebcc76c7a6a862f31ba&oe=586CECBD");
+    background-repeat: no-repeat;
+    background-position: top center;
+    border: 5px solid $heading-color;
+    border-radius: 50%;
+    margin-left: auto;
+  	margin-right: auto;
+  }
+  &-navigation {
+    margin-top: 10px;
+    &-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      &-item {
+        margin: 0;
+        border: 2px solid $heading-color;
+        display: inline-block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100px;
+        a {
+          display: block;
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+  &-iconbar {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    &-link {
+      &-soc-med {
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
+  &-body {
+    margin-top: 20px;
+    padding: 10px;
+    border: 8px double $heading-color;
+  }
+}
+
+@media only screen and (min-width: nth($breakpoints, 1)) 
+{
+	body {
+		margin-left: 20%;
+  		margin-right: 20%;
+	}
+}
