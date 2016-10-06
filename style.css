@@ -1,3 +1,59 @@
+.bio-navigation {
+  margin-top: 10px; }
+  .bio-navigation-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center; }
+    .bio-navigation-list-item {
+      margin: 0;
+      border: 2px solid #a7b5d3;
+      background: #8ba0c1;
+      display: inline-block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 100px; }
+      .bio-navigation-list-item.active {
+        background: #7faef9; }
+      .bio-navigation-list-item a {
+        display: block;
+        text-decoration: none;
+        color: inherit; }
+
+.bio-photo {
+  width: 500px;
+  max-width: 100%;
+  height: 500px;
+  border: 5px solid #a7b5d3;
+  border-radius: 50%;
+  display: block;
+  object-fit: none;
+  object-position: top center;
+  margin-left: auto;
+  margin-right: auto; }
+.bio-contact-img {
+  width: 300px;
+  max-width: 100%;
+  height: 300px;
+  border: 5px solid #a7b5d3;
+  border-radius: 50%;
+  display: block;
+  object-fit: none;
+  object-position: bottom center;
+  margin-left: auto;
+  margin-right: auto; }
+.bio-posts-img {
+  width: 300px;
+  max-width: 100%;
+  height: 300px;
+  border: 5px solid #a7b5d3;
+  border-radius: 50%;
+  display: block;
+  object-fit: none;
+  object-position: center;
+  margin-left: auto;
+  margin-right: auto; }
+
 body {
   background: #d3e1e8; }
 
@@ -6,60 +62,6 @@ body {
   .bio-head {
     text-align: center;
     background: #a7b5d3; }
-  .bio-photo {
-    width: 500px;
-    max-width: 100%;
-    height: 500px;
-    background-image: url("https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-9/10003249_674303089308187_282076607_n.jpg?oh=6d2bf6e2856d6ebcc76c7a6a862f31ba&oe=586CECBD");
-    background-repeat: no-repeat;
-    background-position: top center;
-    border: 5px solid #a7b5d3;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto; }
-  .bio-contact-img {
-    width: 300px;
-    max-width: 100%;
-    height: 300px;
-    background-image: url("contactinfo.png");
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    border: 5px solid #a7b5d3;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto; }
-  .bio-posts-img {
-    width: 300px;
-    max-width: 100%;
-    height: 300px;
-    background-image: url("postsnote.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 5px solid #a7b5d3;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto; }
-  .bio-navigation {
-    margin-top: 10px; }
-    .bio-navigation-list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      text-align: center; }
-      .bio-navigation-list-item {
-        margin: 0;
-        border: 2px solid #a7b5d3;
-        background: #8ba0c1;
-        display: inline-block;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        width: 100px; }
-        .bio-navigation-list-item.active {
-          background: #7faef9; }
-        .bio-navigation-list-item a {
-          display: block;
-          text-decoration: none;
-          color: black; }
   .bio-iconbar {
     text-align: center;
     display: block;
