@@ -1,6 +1,9 @@
 $background-color: #d3e1e8;
 $heading-color: #a7b5d3;
+$button-color: #8ba0c1;
+$curr-color: #7faef9;
 $photo-size: 500px;
+$pic-size: 300px;
 $paragraph-width: 40em;
 $breakpoints: 55em;
 
@@ -26,6 +29,30 @@ body {
     margin-left: auto;
   	margin-right: auto;
   }
+  &-contact-img {
+    width: $pic-size;
+    max-width: 100%;
+    height: $pic-size;
+    background-image: url("contactinfo.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    border: 5px solid $heading-color;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &-posts-img {
+    width: $pic-size;
+    max-width: 100%;
+    height: $pic-size;
+    background-image: url("postsnote.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid $heading-color;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   &-navigation {
     margin-top: 10px;
     &-list {
@@ -36,6 +63,10 @@ body {
       &-item {
         margin: 0;
         border: 2px solid $heading-color;
+        background: $button-color;
+        &.active {
+          background: $curr_color;
+        }
         display: inline-block;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -60,6 +91,11 @@ body {
     }
   }
   &-body {
+    margin-top: 20px;
+    padding: 10px;
+    border: 8px double $heading-color;
+  }
+  &-article {
     margin-top: 20px;
     padding: 10px;
     border: 8px double $heading-color;
